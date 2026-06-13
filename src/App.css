@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+    min-height: 100vh;
+     display: flex;
+  flex-direction: column;
+    background-color: #fdf2e9;
 }
 
 .App-logo {
@@ -36,3 +40,72 @@
     transform: rotate(360deg);
   }
 }
+.MainDiv{
+width: 100%;
+min-height: 700px;
+  background-image: linear-gradient(rgba(0,0,0,0.5) , rgba(255, 122, 26, 0.35)),
+    url("./Imgs/Mainimg.png" );
+    background-size: cover; 
+     background-position: center;
+       background-repeat: no-repeat;
+
+
+} 
+.PopularcatagoriesDiv{
+   background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+.PopularcatagoriesDiv-inner{
+position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.PopularcatagoriesDiv:hover .PopularcatagoriesDiv-inner{
+    transform: rotateY(180deg);
+
+}
+.PopularcatagoriesDiv-front, .PopularcatagoriesDiv-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+.PopularcatagoriesDiv-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.PopularcatagoriesDiv-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg); }
+
+  .catagoriescard:hover{
+    transform:  translateY(-6px);
+     
+  }
+   .catagoriescard {
+    transition:  0.3s ease;
+   }
+   .WhyUseUs:hover{
+    transform:  translateY(-6px);
+     
+  }
+  .WhyUseUs{
+    transition:  0.3s ease;
+  }
+
+  .CardCatagory:hover{
+    transform:  translateY(-6px); }
+
+     .CardCatagory{
+     transition:  0.3s ease;
+  }
