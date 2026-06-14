@@ -14,9 +14,13 @@ export default function Footer(){
                        </h5>
 
 <div style={{display : 'flex' , flexDirection : 'row' , justifyContent : 'space-evenly' , gap : '20px'}}>
+   <Link  to='https://github.com/M7mad7amdan'>
 <h3 style={{cursor : 'pointer'}} href='https://github.com/M7mad7amdan' className="bi bi-github"></h3>
+</Link>
 
+ <Link  to='https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox'>
 <h3 href='' style={{cursor : 'pointer'}} className="bi bi-envelope"></h3>
+</Link>
 </div>
 
                  </div>
@@ -25,7 +29,7 @@ export default function Footer(){
     <ul style={{ display : "flex" , justifyContent : 'center' , flexDirection : 'column' , gap : '15px' , listStyle : 'none'}}>
  
  
-  <li style={{cursor : 'pointer'}} href=''> 
+  <li style={{cursor : 'pointer'}} > 
     <Link  to='/'>
     <i style={{color : '#d97706'}} className="bi bi-house  me-2" ></i>
     Home
@@ -48,7 +52,7 @@ export default function Footer(){
    
 
 
-    <li style={{cursor : 'pointer'}} href=''>  <Link to="/About">
+    <li style={{cursor : 'pointer'}} href=''>  <Link to="/Favorites">
    <i style={{color : '#d97706'}} className="bi bi-heart  me-2"></i>
     Favorites
    </Link>
@@ -68,11 +72,11 @@ export default function Footer(){
                 <div >
                       <h4 style={{marginTop : '20px' , display : "flex" , justifyContent : 'center'}} >Categories</h4>
     <ul style={{ display : "flex" , justifyContent : 'center' , flexDirection : 'column' , gap : '15px' , listStyle : 'none'}}>
-  <li style={{cursor : 'pointer'}}  as={Link} to='/category/Beef'>Beef</li>
-  <li style={{cursor : 'pointer'}}  as={Link}  to='/category/Chicken'>Chicken</li>
-    <li style={{cursor : 'pointer'}} as={Link}  to='/category/Dessert'>Dessert</li>
-  <li style={{cursor : 'pointer'}}   as={Link}  to='/category/SeaFood'>SeaFood</li>
-    <li style={{cursor : 'pointer'}}  as={Link}  to='/category/Vegetarian'>Vegetarian</li>
+  <li style={{cursor : 'pointer'}} > <Link to="/category/Beef"> Beef </Link></li>
+  <li style={{cursor : 'pointer'}}  >  <Link to="/category/Chicken">Chicken </Link></li>
+    <li style={{cursor : 'pointer'}} >  <Link to="/category/Dessert"> Dessert</Link> </li>
+  <li style={{cursor : 'pointer'}}  >  <Link to="/category/SeaFood"> SeaFood</Link></li>
+    <li style={{cursor : 'pointer'}}  >  <Link to="/category/Vegetarian">Vegetarian</Link></li>
 
 </ul>
 </div>
@@ -82,7 +86,8 @@ export default function Footer(){
         </div>
  <hr></hr>
         <div  style={{display : 'flex'  , flexDirection : 'row' , justifyContent : 'space-evenly'}}>
-           <p>2026 Foodie Recipe. All rights reserved.</p>
+           <p> <i class="bi bi-c-circle m-1"></i>
+2026 Foodie Recipe. All rights reserved.</p>
 
 <div>
 

@@ -7,6 +7,7 @@ import CategoryPage from "./CategoryPage/CategoryPage";
 import SearchPage from "./SearchPage/SearchPage"
 import About from './About/About'
 import Scroll from './Scrool';
+import Favorites from "./Favorites/Favorites"
 function App() {
   return (
     <div className="App" style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
@@ -20,8 +21,8 @@ function App() {
             <Route path="/category/:categoryName/:idMeal" element={<CategoryPage />} />
                         <Route path="/category/:categoryName" element={<CategoryPage />} />
                         <Route path="/search/:searchName" element={< SearchPage />} />
-
-            
+                        <Route path='/Favorites' element={<Favorites/>} />
+                   
           </Routes>
         </main>
 
